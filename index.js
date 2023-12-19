@@ -43,3 +43,8 @@ function timer(seconds) {
     displayTimeLeft(secondsLeft);
   }, 1000);
 }
+
+function startTimer() {
+  const seconds = parseInt(this.dataset.time);
+  timer(seconds);
+}
